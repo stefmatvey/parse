@@ -1,7 +1,0 @@
-def parse(response: dict) -> list[str]:
-    logins = []
-    if 'people' in response and 'result' in response['people']:
-        for item in response['people']['result']:
-            if 'login' in item:
-                logins.append(item['login'])
-    return logins
